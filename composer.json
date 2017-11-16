@@ -35,5 +35,31 @@
         }
       }
     },
+    "dcReferenceModelPlugin": {
+      "type": "package",
+      "package": {
+        "name": "desarrollo/dc-reference-model-plugin",
+        "type": "symfony1-plugin",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/Symfony-Plugins/dcReferenceModelPlugin",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    "dcReloadedFormExtraPlugin": {
+      "type": "package",
+      "package": {
+        "name": "desarrollo/dc-reloaded-form-extra-plugin",
+        "type": "symfony1-plugin",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/Symfony-Plugins/dcReloadedFormExtraPlugin",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
   }
 }
