@@ -1,26 +1,34 @@
 {
-  "name": "vadimdol/symfony-legacy",
-  "version": "0.1.0",
-  "license": "MIT",
-  "type": "project",
-  "description": "symfony 1.4 (Legacy) project installer -- Propel flavored",
-  "minimum-stability": "dev",
-  "authors": [
-    {
-      "name": "Vadim Dolganov",
-      "email": "vadim.dolganov97@gmail.com"
+    "repositories":[
+        {
+            "type":"git",
+            "url":"https://github.com/pqr/superlogger"
+        },
+
+        {
+            "type":"package",
+            "package":{
+                "name":"pqr/superlib",
+                "version":"1.2.3",
+                "source":{
+                    "type":"git",
+                    "url":"https://github.com/pqr/superlib",
+                    "reference":"master"
+                },
+                "autoload":{
+                    "classmap":["timer.php"],
+                    "files":["lib_functions.php"]
+                }
+            }
+        }
+    ],
+
+    "require":{
+        "php":">=5.3.0",
+        "silex/silex":"dev-master",
+        "twig/twig":">=1.8,<2.0-dev",
+        "mycompany/superlogger":"dev-master",
+        "pqr/superlib":"1.2.3"
     }
-  ],
-  "config": {
-    "bin-dir": "bin",
-    "vendor-dir": "lib/vendor"
-  },
-  "require": {
-    "php": ">= 5.2.4",
-    "composer/installers": "dev-master",
-    "symfony/symfony1": "1.4",
-    "propel/sf-propel-o-r-m-plugin": "dev-master",
-    "desarrollo/dc-reference-model-plugin": "dev-master",
-    "desarrollo/dc-reloaded-form-extra-plugin": "dev-master"
-  },
 }
+
