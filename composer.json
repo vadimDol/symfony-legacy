@@ -15,7 +15,7 @@
     "vendor-dir": "lib/vendor"
   },
   "require": {
-    "php": ">= 5.2.4, < 5.4",
+    "php": ">= 5.2.4,
     "composer/installers": "dev-master",
     "symfony/symfony1": "1.4",
     "propel/sf-propel-o-r-m-plugin": "dev-master",
