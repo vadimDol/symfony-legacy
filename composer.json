@@ -1,34 +1,65 @@
 {
-    "repositories":[
-        {
-            "type":"git",
-            "url":"https://github.com/pqr/superlogger"
-        },
-
-        {
-            "type":"package",
-            "package":{
-                "name":"pqr/superlib",
-                "version":"1.2.3",
-                "source":{
-                    "type":"git",
-                    "url":"https://github.com/pqr/superlib",
-                    "reference":"master"
-                },
-                "autoload":{
-                    "classmap":["timer.php"],
-                    "files":["lib_functions.php"]
-                }
-            }
-        }
-    ],
-
-    "require":{
-        "php":">=5.3.0",
-        "silex/silex":"dev-master",
-        "twig/twig":">=1.8,<2.0-dev",
-        "mycompany/superlogger":"dev-master",
-        "pqr/superlib":"1.2.3"
+  "name": "ncuesta/symfony-legacy",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "project",
+  "description": "symfony 1.4 (Legacy) project installer -- Propel flavored",
+  "authors": [
+    {
+      "name": "Nahuel Cuesta Luengo",
+      "email": "nahuelcuestaluengo@gmail.com"
     }
+  ],
+  "config": {
+    "bin-dir": "bin",
+    "vendor-dir": "lib/vendor"
+  },
+  "require": {
+    "php": ">= 5.2.4, < 5.4",
+    "composer/installers": "dev-master",
+    "symfony/symfony1": "1.4",
+    "propel/sf-propel-o-r-m-plugin": "dev-master",
+    "desarrollo/dc-reference-model-plugin": "dev-master",
+    "desarrollo/dc-reloaded-form-extra-plugin": "dev-master"
+  },
+  "repositories": {
+    "symfony": {
+      "type": "package",
+      "package": {
+        "name": "symfony/symfony1",
+        "version": "1.4",
+        "bin": ["data/bin/symfony"],
+        "dist": {
+          "url": "https://github.com/symfony/symfony1/zipball/1.4",
+          "type": "zip"
+        }
+      }
+    },
+    "dcReferenceModelPlugin": {
+      "type": "package",
+      "package": {
+        "name": "desarrollo/dc-reference-model-plugin",
+        "type": "symfony1-plugin",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/Symfony-Plugins/dcReferenceModelPlugin",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    },
+    "dcReloadedFormExtraPlugin": {
+      "type": "package",
+      "package": {
+        "name": "desarrollo/dc-reloaded-form-extra-plugin",
+        "type": "symfony1-plugin",
+        "version": "dev-master",
+        "source": {
+          "url": "https://github.com/Symfony-Plugins/dcReloadedFormExtraPlugin",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  }
 }
-
