@@ -1,13 +1,13 @@
 {
-  "name": "ncuesta/symfony-legacy",
+  "name": "vadimDol/symfony-legacy",
   "version": "0.1.0",
   "license": "MIT",
   "type": "project",
   "description": "symfony 1.4 (Legacy) project installer -- Propel flavored",
   "authors": [
     {
-      "name": "Nahuel Cuesta Luengo",
-      "email": "nahuelcuestaluengo@gmail.com"
+      "name": "Vadim Dolganov",
+      "email": "vadim.dolganov97@gmail.com"
     }
   ],
   "config": {
